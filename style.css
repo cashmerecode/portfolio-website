@@ -1,5 +1,6 @@
 :root {
   --bg: #0b0c10;
+  --bg-2: #0e1117;
   --card: #121318;
   --text: #e6e7eb;
   --muted: #b8bdc9;
@@ -7,9 +8,12 @@
   --brand-2: #22c55e;
   --accent: #1f2937;
   --radius: 16px;
-  --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  --radius-sm: 12px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --ring: 0 0 0 3px rgba(139, 92, 246, 0.35);
 }
 
+/* Base */
 * {
   box-sizing: border-box;
 }
@@ -21,8 +25,11 @@ html {
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  background: linear-gradient(180deg, var(--bg), #0e1117);
+  line-height: 1.6;
+  background: linear-gradient(180deg, var(--bg), var(--bg-2));
   color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -40,14 +47,23 @@ img {
   margin-inline: auto;
 }
 
-/* NAV */
+::selection {
+  background: rgba(139, 92, 246, 0.35);
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--ring);
+}
+
+/* Nav */
 header {
   position: sticky;
   top: 0;
   z-index: 50;
   backdrop-filter: saturate(180%) blur(8px);
-  background: rgba(11, 12, 16, .6);
-  border-bottom: 1px solid rgba(255, 255, 255, .06);
+  background: rgba(11, 12, 16, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .nav {
@@ -59,7 +75,7 @@ header {
 
 .logo {
   font-weight: 800;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .logo .dot {
@@ -83,10 +99,10 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: var(--text);
-  background: rgba(255, 255, 255, .06);
+  background: rgba(255, 255, 255, 0.06);
 }
 
-/* HERO */
+/* Hero */
 .hero {
   padding: 84px 0 56px;
 }
@@ -94,17 +110,17 @@ nav a:focus {
 .grid {
   display: grid;
   gap: 28px;
-  grid-template-columns: 1.1fr .9fr;
+  grid-template-columns: 1.1fr 0.9fr;
 }
 
 .tag {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: .85rem;
+  font-size: 0.85rem;
   color: var(--muted);
-  background: rgba(139, 92, 246, .15);
-  border: 1px solid rgba(139, 92, 246, .35);
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.35);
   padding: 6px 10px;
   border-radius: 999px;
 }
@@ -133,7 +149,7 @@ nav a:focus {
   gap: 10px;
   padding: 12px 16px;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   background: var(--brand);
   color: white;
   font-weight: 600;
@@ -147,17 +163,17 @@ nav a:focus {
 
 .avatar {
   width: 180px;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, .1);
+  border: 3px solid rgba(255, 255, 255, 0.1);
   box-shadow: var(--shadow);
   object-fit: cover;
 }
 
-/* SECTIONS */
+/* Sections */
 section {
   padding: 64px 0;
-  border-top: 1px solid rgba(255, 255, 255, .06);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 h2 {
@@ -168,8 +184,8 @@ h2 {
 .kicker {
   color: var(--brand-2);
   font-weight: 700;
-  font-size: .85rem;
-  letter-spacing: .08em;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
   margin-bottom: 8px;
 }
 
@@ -182,7 +198,7 @@ h2 {
 .card {
   grid-column: span 6;
   background: var(--card);
-  border: 1px solid rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: var(--radius);
   padding: 18px;
   box-shadow: var(--shadow);
@@ -205,12 +221,12 @@ h2 {
   padding: 8px 10px;
   border-radius: 999px;
   background: #111827;
-  border: 1px solid rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   color: var(--muted);
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
-/* PROJECTS */
+/* Projects */
 .project {
   display: grid;
   gap: 12px;
@@ -219,7 +235,7 @@ h2 {
 
 .project img {
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .project .meta {
@@ -234,7 +250,7 @@ h2 {
   gap: 8px;
   padding: 8px 12px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   background: #0f1116;
   color: var(--text);
 }
@@ -243,28 +259,30 @@ h2 {
   background: #131722;
 }
 
-/* CONTACT */
+/* Contact */
 .contact {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
   padding: 24px 0 80px;
   color: var(--muted);
 }
 
-/* RESPONSIVE */
+/* Responsive */
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr;
   }
+
   .card,
   .card.small {
     grid-column: span 12;
   }
+
   .hero {
     padding-top: 64px;
   }
