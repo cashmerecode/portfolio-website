@@ -12,3 +12,34 @@ Once deployed with GitHub Pages, the site will be accessible here:
 ---
 
 ## Project Structure
+---
+
+## 🚀 Features
+- Hero section with intro & tagline  
+- About Me section with background info  
+- Skills section (HTML, CSS, JS, etc.)  
+- Projects showcase  
+- Contact/footer  
+
+---
+
+## 🛠️ Technologies Used
+- HTML5  
+- CSS3  
+- GitHub Pages (deployment)  
+
+---
+
+## 📌 Notes
+This portfolio is a living project and will be updated throughout the term with new projects:
+- Portfolio Website (this project)  
+- Intel Sustainability Timeline  
+- charity: water Game Concept  
+
+---
+
+## ✍️ Reflection
+> Building this portfolio website with AI support (Copilot/ChatGPT) gave me a “quick win” and confidence to ship live code.  
+> As projects increase in complexity, my understanding of fundamentals (HTML, CSS, JS, GitHub workflow) will guide my ability to iterate and scale effectively.  
+
+---
