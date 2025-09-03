@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anthony Bauman — Web Developer</title>
+  <meta name="description" content="Portfolio of Anthony Bauman — Web development projects, skills, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-+b3h7sPz0c0kq0iNLH6bC8g2xv9Y6s6h0G3r9R9H2t3dQm2dVn2zqzV6j2lF2GZ8k7cdb+1mQYV1mXg4O2m1BA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <div class="container nav">
+      <div class="logo" aria-label="Anthony Bauman home">Anthony<span class="dot">.</span>Bauman</div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero container" id="home">
+    <div class="grid">
+      <div>
+        <span class="tag"><i class="fa-solid fa-wand-magic-sparkles"></i> AI‑assisted Front‑End</span>
+        <h1 class="title">Building useful, accessible, revenue‑ready web projects.</h1>
+        <p class="subtitle">I’m Anthony, a UNLV student and builder. I ship fast with HTML, CSS, and JavaScript—using AI tools responsibly to accelerate research, boilerplate, and debugging.</p>
+        <div class="cta">
+          <a class="btn" href="#projects"><i class="fa-solid fa-folder-tree"></i>View Projects</a>
+          <a class="btn secondary" href="https://github.com/" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>GitHub</a>
+        </div>
+      </div>
+      <div style="display:flex; justify-content:center; align-items:flex-start">
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Placeholder avatar" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="kicker">ABOUT</div>
+      <h2>Who I am</h2>
+      <div class="cards">
+        <article class="card" aria-labelledby="about-me">
+          <h3 id="about-me" style="margin-top:0">A builder with a global lens</h3>
+          <p>I’m developing a multi-brand ecosystem (Stablemate, Soundboard, and logistics efforts). My focus this term is strengthening fundamentals, shipping on a cadence, and applying accessibility and localization so products scale beyond one context.</p>
+        </article>
+        <aside class="card" aria-labelledby="highlights">
+          <h3 id="highlights" style="margin-top:0">Highlights</h3>
+          <ul>
+            <li>Semantic HTML & modern, responsive CSS</li>
+            <li>AI‑assisted workflows (Copilot/ChatGPT) with understanding</li>
+            <li>Version control discipline with Git & GitHub</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="kicker">SKILLS</div>
+      <h2>Tools I use</h2>
+      <div class="stack">
+        <span class="chip"><i class="fa-brands fa-html5"></i> HTML5</span>
+        <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+        <span class="chip"><i class="fa-brands fa-square-js"></i> JavaScript</span>
+        <span class="chip"><i class="fa-solid fa-universal-access"></i> Accessibility</span>
+        <span class="chip"><i class="fa-solid fa-globe"></i> Localization</span>
+        <span class="chip"><i class="fa-brands fa-github"></i> Git & GitHub</span>
+        <span class="chip"><i class="fa-solid fa-robot"></i> Copilot / ChatGPT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="kicker">PROJECTS</div>
+      <h2>Recent work</h2>
+      <div class="cards">
+        <article class="card project" aria-labelledby="p1">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="Screenshot placeholder of a portfolio site" />
+          <h3 id="p1" style="margin:4px 0 0">Personal Portfolio</h3>
+          <p>Single‑page portfolio built with semantic HTML, responsive CSS grid/flexbox, and accessible color contrast.</p>
+          <div class="meta">
+            <a class="link" href="#"><i class="fa-solid fa-up-right-from-square"></i> Live demo</a>
+            <a class="link" href="#"><i class="fa-brands fa-github"></i> Repository</a>
+          </div>
+        </article>
+        <article class="card project" aria-labelledby="p2">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop" alt="Screenshot placeholder of Intel timeline" />
+          <h3 id="p2" style="margin:4px 0 0">Intel Sustainability Timeline</h3>
+          <p>Responsive timeline component emphasizing mobile‑first layout and readable typography.</p>
+          <div class="meta">
+            <a class="link" href="#"><i class="fa-solid fa-up-right-from-square"></i> Live demo</a>
+            <a class="link" href="#"><i class="fa-brands fa-github"></i> Repository</a>
+          </div>
+        </article>
+        <article class="card project" aria-labelledby="p3">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Screenshot placeholder of charity: water concept" />
+          <h3 id="p3" style="margin:4px 0 0">charity: water Game Concept</h3>
+          <p>UX exploration using design thinking: research, ideation, prototyping, and test notes distilled into a simple demo.</p>
+          <div class="meta">
+            <a class="link" href="#"><i class="fa-solid fa-up-right-from-square"></i> Live demo</a>
+            <a class="link" href="#"><i class="fa-brands fa-github"></i> Repository</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="kicker">CONTACT</div>
+      <h2>Let’s connect</h2>
+      <p>For collaborations, contracts, or feedback, reach out directly.</p>
+      <div class="contact">
+        <a class="link" href="mailto:you@example.com"><i class="fa-solid fa-envelope"></i> you@example.com</a>
+        <a class="link" href="https://github.com/" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Anthony Bauman. Built with HTML, CSS, and a little AI assistance.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
