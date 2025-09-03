@@ -1,7 +1,6 @@
 # Portfolio Website
 
-This is my personal portfolio website project for **BUS 281X – Global Career Accelerator (UNLV)**.  
-Built with **HTML** and **CSS**, this single-page site showcases my skills, projects, and growth in web development.  
+This is my personal portfolio website project for **BUS 281X – Global Career Accelerator (UNLV)**. Built with **HTML** and **CSS**, this single-page site showcases my skills, projects, and growth in web development.  
 
 ---
 
